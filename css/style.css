@@ -9,6 +9,11 @@
 
 .default_color_text{color: #2196F3 !important}
 
+* {
+    margin: 0;
+    padding: 0;
+}
+
 .icon-block {
     padding: 0 15px;
 }
@@ -20,12 +25,19 @@
     min-height: 632px;
     max-height: 864px;
     position: relative;
-    background-color: #2196F3;
+    background-color: black;
 }
 
+
 #nav_f{
+    display: flex !important;
+    justify-content: space-between !important;
+    margin: 0 !important;
+    padding: 0 !important;
     box-shadow: none !important; 
     -webkit-box-shadow:none !important;
+    background: black !important;
+    color: #2196F3 !important;
 }
 
 .text_h {
@@ -36,14 +48,69 @@
 }
 
 .brand-logo{
-    position: absolute;
     color: #fff;
-    display: inline-block;
     font-size: 2.1rem;
     font-style: normal;
     font-weight: 100;
     padding: 0;
     letter-spacing: 7px;
+}
+.menu li a {
+    transition-duration: 0.3s;
+}
+.menu li a:hover {
+    color: #53aff6 !important;
+}
+.container1 {
+   display: flex;
+   align-items: center;
+   justify-content: space-between;
+   width: 100%;
+}
+.right {
+    display: flex;
+    justify-content: right;
+}
+#logo-container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-left: 10px;
+}
+#logo-container img {
+    width: 5rem;
+    height: 3.5rem;
+}
+.header h5 {
+    color:#2196F3;
+}
+.btnM {
+    margin: 4px 2px;
+}
+.collection {
+    border: none !important;
+}
+.contactDetail {
+    display: flex;
+    flex-direction: column;
+}
+
+.contactDetail li a {
+    display: flex !important;
+    align-items: center !important;
+    padding: 0 1px;
+}
+i {
+    padding-right: 10px !important;
+}
+.collection li p {
+    margin-left: -10px !important;
+}
+.collection li {
+    margin: 0 -18px !important;
+}
+.homeContent {
+    font-size: 12px !important;
 }
 
 .text_h2 {font-weight: 100;margin-bottom: 4%; line-height: 4.5rem;}
@@ -219,6 +286,13 @@ nav ul a {
         font-weight: 100;
         color: white;
     }
+    .homeContent {
+        margin-top: 35%;
+        font-size: 10px !important;
+    }
+    
+
+
 }
 
 input, textarea {
@@ -226,7 +300,7 @@ input, textarea {
 }
 
 nav a.button-collapse {
-    left: -25px;
+    left: -1rem !important;
 }
 
 .card-avatar .waves-effect {
@@ -262,4 +336,5 @@ nav a.button-collapse {
 
 footer.page-footer {
     margin-top: 0px !important;
+    
 }
