@@ -103,6 +103,11 @@
 i {
     padding-right: 10px !important;
 }
+.mdi-communication-email {
+    margin-left: -2.3px;
+    margin-right: -2px;
+    padding-right: -100px !important;
+}
 .collection li p {
     margin-left: -10px !important;
 }
@@ -356,4 +361,4 @@ footer.page-footer {
   word-wrap: normal;
   white-space: nowrap;
   direction: ltr;
-}
+  }
